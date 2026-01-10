@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSprint 2026</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Scroll to top on page load/reload
+        if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'manual';
+        }
+        window.onbeforeunload = function() {
+            window.scrollTo(0, 0);
+        };
+    </script>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">TechSprint 2026</div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#details">Details</a></li>
+                    <li><a href="#stats">Stats</a></li>
+                    <li><a href="#sponsors">Sponsors</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <h2 class="eyebrow">THE MOST COMPETITIVE COLLEGIATE HACKATHON</h2>
+            <h1>WELCOME TO <br><span class="accent-text">TechSprint 2026</span></h1>
+            <p class="tagline">Innovate • Build • Compete</p>
+            
+            <div class="hero-stats">
+                <div class="stat-pill">70+ Registered Participants</div>
+                <div class="stat-pill">NPR 100K+ Prizes</div>
+            </div>
+
+            <div class="hero-benefits">
+                <span> Cash Prizes</span>
+                <span> Swags</span>
+                
+            </div>
+
+            <div class="cta-area">
+                <button class="btn-disabled" disabled>Registration Closed</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section dark-bg border-top">
+        <div class="container">
+            <div class="grid-2">
+                <div>
+                    <h2 class="section-title">ABOUT THE <br>HACKATHON</h2>
+                </div>
+                <div>
+                    <p class="lead-text">TechSprint 2026 is a  college-level hackathon designed to push the boundaries of student innovation.</p>
+                    <p>Over the course of the event, teams will collaborate to solve real world problems through rapid prototyping and code. Whether you're a designer, developer, or problem-solver, this is your platform to shine.</p>
+                    <a href="#details" class="text-link">Learn more about the challenge →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="stats" class="section dark-bg">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">70+</span>
+                    <span class="stat-label">Participants</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">20</span>
+                    <span class="stat-label">Teams</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">15</span>
+                    <span class="stat-label">Mentors</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">5</span>
+                    <span class="stat-label">Partner Events</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sponsors" class="section">
+        <div class="container">
+            <h2 class="section-title centered">CO-ORGANIZERS</h2>
+            <div class="logo-grid small">
+                <div class="co-org-card">
+                    <img src="assets/government of nepal.png.png" alt="Ministry of Education, Science and Technology">
+                    <span class="co-org-name">MOEST</span>
+                    <span class="co-org-subtitle">Ministry of Education, Science and Technology</span>
+                </div>
+            </div>
+
+            <h2 class="section-title centered mini-margin">SUPPORTED BY</h2>
+            <div class="logo-grid small supported-by">
+                <div class="co-org-card">
+                    <img src="assets/nepal engineering college.jpg" alt="Nepal Engineering College">
+                    <span class="co-org-name">Nepal Engineering College</span>
+                </div>
+                <div class="co-org-card">
+                    <img src="assets/pokhara univerity.png" alt="Pokhara University">
+                    <span class="co-org-name">Pokhara University</span>
+                </div>
+            </div>
+
+            <h2 class="section-title centered mini-margin">PARTNERS</h2>
+            <div class="partner-carousel-wrapper">
+                <button class="carousel-btn prev" onclick="moveCarousel(-1)">&#10094;</button>
+                <div class="partner-carousel">
+                    <div class="partner-track">
+                        <div class="partner-card">
+                            <img src="assets/100xNepal.jpeg" alt="100xNepal">
+                            <span class="partner-name">100xNepal</span>
+                        </div>
+                        <div class="partner-card">
+                            <img src="assets/COESIS Sagramatha.png" alt="COESIS Sagramatha">
+                            <span class="partner-name">COESIS Sagramatha</span>
+                        </div>
+                        <div class="partner-card">
+                            <img src="assets/IIMS_ECHO CLUB.jpg" alt="IIMS ECHO CLUB">
+                            <span class="partner-name">IIMS ECHO CLUB</span>
+                        </div>
+                        <div class="partner-card">
+                            <img src="assets/IT engineering tech club NCIT.jpg" alt="IT Engineering Tech Club NCIT">
+                            <span class="partner-name">IT Engineering Tech Club NCIT</span>
+                        </div>
+                        <div class="partner-card">
+                            <img src="assets/KHEC IT CIRCLE.png" alt="KHEC IT CIRCLE">
+                            <span class="partner-name">KHEC IT CIRCLE</span>
+                        </div>
+                        <div class="partner-card">
+                            <img src="assets/MBMC IdeaX.png" alt="MBMC IdeaX">
+                            <span class="partner-name">MBMC IdeaX</span>
+                        </div>
+                        <div class="partner-card">
+                            <img src="assets/Prime IT Club.png" alt="Prime IT Club">
+                            <span class="partner-name">Prime IT Club</span>
+                        </div>
+                        <div class="partner-card">
+                            <img src="assets/cloud computing.jpg" alt="Cloud Computing">
+                            <span class="partner-name">Cloud Computing</span>
+                        </div>
+                        <div class="partner-card">
+                            <img src="assets/daj.jpg" alt="DAJ">
+                            <span class="partner-name">DAJ</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next" onclick="moveCarousel(1)">&#10095;</button>
+            </div>
+
+            <h2 class="section-title centered mini-margin">OUR SPONSORS</h2>
+            <div class="logo-grid sponsors-logo-grid">
+                <div class="co-org-card">
+                    <img src="assets/nepal telecom.jpg" alt="Nepal Telecom">
+                    <span class="co-org-name">Nepal Telecom</span>
+                </div>
+                <div class="co-org-card">
+                    <img src="assets/avighna technologies.png" alt="Avighna Technologies">
+                    <span class="co-org-name">Avighna Technologies</span>
+                </div>
+                <div class="co-org-card">
+                    <img src="assets/ug cakes.jpg" alt="UG Cakes">
+                    <span class="co-org-name">UG Cakes</span>
+                </div>
+                <div class="co-org-card">
+                    <img src="assets/boradway infosys.webp" alt="Broadway Infosys">
+                    <span class="co-org-name">Broadway Infosys</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="details" class="section">
+        <div class="container">
+            <h2 class="section-title centered">EVENT DETAILS</h2>
+            <div class="details-grid">
+                <div class="detail-card">
+                    <h3>Location</h3>
+                    <p>Nepal Engineering College<br>Changunarayan, Bhaktapur</p>
+                </div>
+                <div class="detail-card">
+                    <h3>Date</h3>
+                    <p>Jan 16<br>Spring 2026</p>
+                </div>
+                <div class="detail-card">
+                    <h3>Duration</h3>
+                    <p>48 Hours<br>Non-stop Building</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <div class="container">
+            <div class="map-wrapper">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.20575278702!2d85.41303567620164!3d27.710932876180607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1b1fed5126c5%3A0x66a89bde8e23a65e!2sNepal%20Engineering%20College!5e0!3m2!1sen!2snp!4v1768030925499!5m2!1sen!2snp" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="section dark-bg">
+        <div class="container narrow">
+            <h2 class="section-title centered">FAQ</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3>Who can apply?</h3>
+                    <p>Any undergraduate student currently enrolled in a college or university is eligible to participate.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Is there a registration fee?</h3>
+                    <p>Yes, the registration fee is NPR 2000 per team.</p>
+                </div>
+                <div class="faq-item"><h3>What is the team size?</h3>
+                    <p>Teams should consist of 2 to 5 members.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Are meals provided?</h3>
+                    <p>Yes, all meals and lunches will be covered during the event, so no need to worry about food!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>TechSprint 2026</h3>
+                    <p>Organized by Nepal Engineering College</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Email</a>
+                    <a href="#">Twitter</a>
+                    <a href="https://www.instagram.com/coess_nec/" target="_blank">Instagram</a>
+                    <a href="https://www.linkedin.com/company/coess-nec" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 TechSprint. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let currentIndex = 0;
+        const track = document.querySelector('.partner-track');
+        const cards = document.querySelectorAll('.partner-card');
+        const totalCards = cards.length;
+        let cardsPerView = 4;
+
+        function updateCardsPerView() {
+            if (window.innerWidth <= 480) {
+                cardsPerView = 1;
+            } else if (window.innerWidth <= 768) {
+                cardsPerView = 2;
+            } else if (window.innerWidth <= 1024) {
+                cardsPerView = 3;
+            } else {
+                cardsPerView = 4;
+            }
+        }
+
+        function moveCarousel(direction) {
+            updateCardsPerView();
+            const maxIndex = totalCards - cardsPerView;
+            currentIndex += direction;
+            if (currentIndex < 0) currentIndex = maxIndex;
+            if (currentIndex > maxIndex) currentIndex = 0;
+            updateCarousel();
+        }
+
+        function updateCarousel() {
+            const cardWidth = cards[0].offsetWidth + 20; // width + gap
+            track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+        }
+
+        // Auto-slide every 3 seconds
+        setInterval(() => moveCarousel(1), 3000);
+
+        // Recalculate on resize
+        window.addEventListener('resize', () => {
+            updateCardsPerView();
+            updateCarousel();
+        });
+
+        // Initialize
+        updateCardsPerView();
+    </script>
+</body>
+</html>
