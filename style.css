@@ -15,6 +15,11 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
@@ -52,6 +57,27 @@ section[id] {
     color: var(--white);
 }
 
+.light-bg {
+    background-color: var(--white);
+    color: var(--text-main);
+}
+
+.light-bg .section-title {
+    color: var(--text-main);
+}
+
+.light-bg .lead-text {
+    color: var(--text-main);
+}
+
+.light-bg p {
+    color: var(--text-dim);
+}
+
+.light-bg .text-link {
+    color: var(--text-main);
+}
+
 .border-top {
     border-top: 1px solid #222;
 }
@@ -87,6 +113,16 @@ section[id] {
     color: var(--white);
     letter-spacing: -1px;
     margin-right: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 nav ul {
@@ -467,6 +503,8 @@ nav a:hover {
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .footer-brand h3 {
@@ -475,11 +513,15 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
-.footer-brand p { color: #666; }
+.footer-brand p { 
+    color: #666; 
+    white-space: nowrap;
+}
 
 .footer-links {
     display: flex;
-    gap: 30px;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .footer-links a {
@@ -487,6 +529,7 @@ nav a:hover {
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 600;
+    white-space: nowrap;
 }
 
 .footer-bottom {
@@ -496,6 +539,26 @@ nav a:hover {
     font-size: 0.75rem;
     font-weight: 600;
     text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    .footer-grid {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+
+    .footer-brand p {
+        white-space: normal;
+    }
+
+    .footer-bottom {
+        text-align: center;
+    }
 }
 
 /* --- Partner Carousel --- */
@@ -613,6 +676,7 @@ nav a:hover {
 
     .partner-carousel-wrapper {
         padding: 0 40px;
+        max-width: 100%;
     }
 
     .partner-card {
@@ -624,6 +688,19 @@ nav a:hover {
         height: 35px;
         font-size: 1rem;
     }
+
+    .container {
+        padding: 0 1rem;
+    }
+
+    .sponsors-logo-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .logo-grid {
+        gap: 15px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -633,5 +710,18 @@ nav a:hover {
 
     .partner-carousel-wrapper {
         padding: 0 45px;
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .sponsors-logo-grid {
+        grid-template-columns: 1fr;
     }
 }
