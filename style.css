@@ -413,6 +413,186 @@ nav a:hover {
     letter-spacing: 1px;
 }
 
+/* --- Pen Testing Challenge Section --- */
+#pentesting {
+    padding: 80px 0;
+}
+
+.pentest-logo {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.pentest-logo img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+#pentesting .section-title {
+    color: var(--white);
+    margin-bottom: 3rem;
+}
+
+.pentest-intro {
+    max-width: 900px;
+    margin: 0 auto 4rem;
+    text-align: center;
+}
+
+.pentest-intro .lead-text {
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.pentest-intro p {
+    color: #aaa;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.pentest-highlights {
+    max-width: 1000px;
+    margin: 0 auto 4rem;
+}
+
+.highlights-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 2.5rem;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+}
+
+.highlight-item {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #333;
+    padding: 25px;
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.highlight-item:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+}
+
+.highlight-icon {
+    font-size: 2rem;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.highlight-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.highlight-content strong {
+    color: var(--accent);
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.highlight-content span {
+    color: #ccc;
+    font-size: 1rem;
+}
+
+.highlight-value {
+    color: var(--white) !important;
+    font-size: 1.8rem !important;
+    font-weight: 900 !important;
+    line-height: 1;
+}
+
+.date-range {
+    color: #888 !important;
+    font-size: 0.85rem !important;
+    font-style: italic;
+}
+
+.pentest-schedule {
+    max-width: 800px;
+    margin: 0 auto 4rem;
+}
+
+.schedule-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 2.5rem;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.schedule-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.schedule-item {
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 4px solid var(--accent);
+    padding: 25px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.schedule-date {
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.schedule-event {
+    color: #ccc;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.pentest-cta {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.btn-primary {
+    background: var(--accent);
+    color: var(--dark-bg);
+    border: none;
+    padding: 20px 60px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    letter-spacing: 1px;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 255, 195, 0.3);
+}
+
 @media (max-width: 768px) {
     .sponsors-grid {
         grid-template-columns: 1fr;
@@ -686,6 +866,19 @@ nav a:hover {
 
     .section-title {
         font-size: 2.2rem;
+    }
+
+    .highlights-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .schedule-item {
+        padding: 20px;
+    }
+
+    .btn-primary {
+        padding: 18px 40px;
+        font-size: 0.9rem;
     }
 
     .partner-carousel-wrapper {
